@@ -1,0 +1,272 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation | Welcome</title>
+
+    <!--linke to stylesheest-->
+
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+
+
+    <script>
+  $(function() {
+    $( "#from" ).datepicker({
+      defaultDate: "+1w",
+      changeMonth: true,
+      numberOfMonths: 3,
+      onClose: function( selectedDate ) {
+        $( "#to" ).datepicker( "option", "minDate", selectedDate );
+      }
+    });
+    $( "#to" ).datepicker({
+      defaultDate: "+1w",
+      changeMonth: true,
+      numberOfMonths: 3,
+      onClose: function( selectedDate ) {
+        $( "#from" ).datepicker( "option", "maxDate", selectedDate );
+      }
+    });
+  });
+  </script>
+
+  </head>
+  <body>
+
+
+    <div class="nav large-12 columns">
+        <div class="logo">
+          <img src="img/Emirates-logo.png">
+        </div>
+    </div>
+
+
+    <div class="row" "header-content">
+      <div class="large-12 columns">
+        <h1 class="header-content">Find music around the world</h1>
+      </div>
+    </div>
+
+    <div class="large-12 columns link">
+      <a href="www.spotify.com">Link your Spotify account</a>
+    </div>
+
+
+        <div class="row" "input-elements">
+
+           
+            <div class="large-4 medium-4 small-4 columns">
+              <label for="from">Search</label>
+              <input type="text" placeholder="Search artist, festival or genre" />
+            </div>
+          
+           
+            <div class="large-4 medium-4 small-4 columns">
+                <label for="from">From</label>
+                <input type="text" id="from" name="from">
+            </div>
+        
+       
+          <div class="large-4 medium-4 small-4 columns">
+
+              <label for="to">to</label>
+               <input type="text" id="to" name="to"> 
+        
+        </div>
+
+        <!--END INPUT ELEMENTS-->
+      </div>
+
+        <div class="button" "button-content">
+          <a class="button-area" href="#" >Search</a><br/>
+        </div>
+
+        <!--START OF THE MAP-->
+
+        <div class="row">
+          <div class="map large-12 columns">
+            <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/kellydern.cigpfiick00u7uckosa8kgc6f/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1Ijoia2VsbHlkZXJuIiwiYSI6ImNpZ3BmaWpxeTAwdjF1eG0xdjdocmhvenYifQ.ua0dnrQ9efuNZxwGg7R9zA'></iframe>
+          </div>
+        </div>
+
+
+
+        <!--Popular Events-->
+
+        <div class="row" "popular-events">
+          <div class="large-4 medium-4 small-4 columns">
+            <div class="callout panel">
+              <img src="img/radiohead.jpg">
+              <p class="artist">Radiohead</p>
+              <p class="date">November 15, 2015</p>
+              <p class="location">London, UK</p>
+              <a href="#" class="small round button">Book</a><br/>            
+            </div>
+          </div>
+        <div>
+
+            <div class="row" "popular-events">
+          <div class="large-4 medium-4 small-4 columns">
+            <div class="callout panel">
+              <img src="img/radiohead.jpg">
+              <p class="artist">Radiohead</p>
+              <p class="date">November 15, 2015</p>
+              <p class="location">London, UK</p>
+               <a href="#" class="small round button">Book</a><br/> 
+            </div>
+          </div>
+        <div>
+
+      <div class="row" "popular-events">
+          <div class="large-4 medium-4 small-4 columns">
+            <div class="callout panel">
+              <img src="img/radiohead.jpg">
+                <p class="artist">Radiohead</p>
+                <p class="date">November 15, 2015</p>
+                <p class="location">London, UK</p>
+                  <a href="#" class="small round button">Book</a><br/> 
+            </div>
+          </div>
+        <div>
+
+
+          
+
+
+    <div class="row">
+      <div class="large-8 medium-8 columns">
+        <h5>Here&rsquo;s your basic grid:</h5>
+        <!-- Grid Example -->
+
+        <div class="row">
+          <div class="large-12 columns">
+            <div class="callout panel">
+              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-6 medium-6 columns">
+            <div class="callout panel">
+              <p>Six columns</p>
+            </div>
+          </div>
+          <div class="large-6 medium-6 columns">
+            <div class="callout panel">
+              <p>Six columns</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-4 medium-4 small-4 columns">
+            <div class="callout panel">
+              <p>Four columns</p>
+            </div>
+          </div>
+          <div class="large-4 medium-4 small-4 columns">
+            <div class="callout panel">
+              <p>Four columns</p>
+            </div>
+          </div>
+          <div class="large-4 medium-4 small-4 columns">
+            <div class="callout panel">
+              <p>Four columns</p>
+            </div>
+          </div>
+        </div>
+        
+        <hr />
+                
+        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
+
+       
+
+        <form>
+          <div class="row">
+            <div class="large-12 columns">
+              <label>Input Label</label>
+              <input type="text" placeholder="large-12.columns" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 medium-4 columns">
+              <label>Input Label</label>
+              <input type="text" placeholder="large-4.columns" />
+            </div>
+            <div class="large-4 medium-4 columns">
+              <label>Input Label</label>
+              <input type="text" placeholder="large-4.columns" />
+            </div>
+            <div class="large-4 medium-4 columns">
+              <div class="row collapse">
+                <label>Input Label</label>
+                <div class="small-9 columns">
+                  <input type="text" placeholder="small-9.columns" />
+                </div>
+                <div class="small-3 columns">
+                  <span class="postfix">.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <label>Select Box</label>
+              <select>
+                <option value="husker">Husker</option>
+                <option value="starbuck">Starbuck</option>
+                <option value="hotdog">Hot Dog</option>
+                <option value="apollo">Apollo</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-6 medium-6 columns">
+              <label>Choose Your Favorite</label>
+              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
+              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
+            </div>
+            <div class="large-6 medium-6 columns">
+              <label>Check these out</label>
+              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <label>Textarea Label</label>
+              <textarea placeholder="small-12.columns"></textarea>
+            </div>
+          </div>
+        </form>
+      </div>     
+
+      <div class="large-4 medium-4 columns">
+        <h5>Try one of these buttons:</h5>
+        <p><a href="#" class="small button">Simple Button</a><br/>
+        <a href="#" class="small radius button">Radius Button</a><br/>
+        <a href="#" class="small round button">Round Button</a><br/>            
+        <a href="#" class="medium success button">Success Btn</a><br/>
+        <a href="#" class="medium alert button">Alert Btn</a><br/>
+        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
+        <div class="panel">
+          <h5>So many components, girl!</h5>
+          <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
+          <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
+        </div>
+      </div>
+    </div>
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
