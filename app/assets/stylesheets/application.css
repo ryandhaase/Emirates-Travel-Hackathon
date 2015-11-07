@@ -54,9 +54,12 @@
    text-align: center;
    border-radius: 3px;
  }
+ a:visited {
+   color: #FFFFFF;
+ }
 
  a:link {
-   color: #e21b23;
+   color: #FFFFFF;
  }
 
  .button-area {
