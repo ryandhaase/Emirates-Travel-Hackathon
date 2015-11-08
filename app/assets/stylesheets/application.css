@@ -132,3 +132,122 @@
  .panel.callout a:not(.button):hover, .panel.callout a:not(.button):focus {
    color: #0078a0;
  }
+
+       /*new styles*/
+
+  .photo {
+    padding: 50px 0px;
+    color: #333333;
+    background-image: url("../img/concert.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width:100%;
+  }
+
+  .header {
+  font-family: font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 56px;
+  font-weight: 500;
+  color: #333333;
+  text-align: center;
+  margin: 0px auto;
+  padding: 50px;
+}
+
+.header-photo {
+  font-family: font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 56px;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0px auto;
+  padding: 50px 200px;
+}
+
+h2 {
+  text-align: center;
+  margin: 0px auto;
+}
+
+.nav {
+  padding: 100px 0px;
+  max-width: 100%;
+  background-color: #333333;
+}
+
+.icon {
+  margin: 0px auto;
+  text-align: center;
+}
+
+.icon-elements {
+  display: inline-block;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.artist-photo {
+  margin: 0px auto;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+a {
+  color: #FFFFFF;
+}
+
+a:visited {
+  color: #FFFFFF;
+}
+
+.small-button {
+   -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 0;
+  cursor: pointer;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1.3rem 2rem;
+  border-radius: 3px;
+  font-size: 1rem;
+  background-color: #e11f26;
+  border-color: #e11f26;
+  color: #FFFFFF;
+}
+
+.description {
+  text-align: center;
+}
+
+.description-large {
+  text-align: center;
+  font-size: 30px;
+}
+
+ .panel.callout a:not(.button) {
+      color: #FFFFFF }
+
+
+
+.panel.callout {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d8d8d8;
+    margin-bottom: 1.25rem;
+    padding: 1.25rem;
+    background: #f9f9f9;
+    color: #f7f7f7; }
+
+.subtitle {
+  text-align: center;
+  padding: 20px;
+}
+
