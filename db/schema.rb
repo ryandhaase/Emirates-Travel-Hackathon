@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151108014011) do
+ActiveRecord::Schema.define(version: 20151108035817) do
 
   create_table "events", force: :cascade do |t|
     t.datetime "created_at",  null: false
@@ -29,8 +29,8 @@ ActiveRecord::Schema.define(version: 20151108014011) do
 
   create_table "searches", force: :cascade do |t|
     t.string   "category"
-    t.date     "start_date"
-    t.date     "end_date"
+    t.string   "start_date"
+    t.string   "end_date"
     t.string   "city"
     t.string   "state"
     t.string   "country"
