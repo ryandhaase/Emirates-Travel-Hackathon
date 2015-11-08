@@ -4,8 +4,6 @@ class Landing < ActiveRecord::Base
   base_uri "http://www.stubhub.com/listingCatalog/select/?q="
   format :json
 
-
-
   def self.test()
     # query_url = "https://api.stubhub.com/search/catalog/events/v3?&categoryId=1&q=#{@search}"
     # auth = { :bearer => "API KEY HERE" }
