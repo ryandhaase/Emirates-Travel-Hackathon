@@ -12,7 +12,7 @@
 
   <style>
   body { margin:0; padding:0; }
-  #map { width:100%; height: 500px }
+  #map { width:100%; height: 600px }
   .leaflet-popup-content { padding:30px 30px;}
   </style>
 </head>
@@ -24,17 +24,21 @@
 <script>
 L.mapbox.accessToken = 'pk.eyJ1Ijoia2VsbHlkZXJuIiwiYSI6ImNpZ3BmaWpxeTAwdjF1eG0xdjdocmhvenYifQ.ua0dnrQ9efuNZxwGg7R9zA';
 var map = L.mapbox.map('map', 'mapbox.streets')
-.setView([40, -74.50], 9);
+.setView([38.9, -77], 5);
 
 var fixedMarker = L.marker(new L.LatLng(38.9, -77), {
   icon: L.mapbox.marker.icon({
     'marker-color': 'ff8888'
   })
-}).bindPopup('Into the Valley <br /> Sweden <br /> June 15, 2016 <br /> <a href=\'https://www.spotify.com\'>A link</a>').addTo(map);
+}).bindPopup('Into the Valley <br /> Sweden <br /> June 15, 2016 <br /> <a href=\'http://localhost:3000/landings/13/booking\'>Book Travel</a>').addTo(map);
 
 var fixedMarker = L.marker(new L.LatLng(40, -80), {
   icon: L.mapbox.marker.icon({
     'marker-color': 'ff8888'
   })
-}).bindPopup('Into the Valley <br /> Sweden <br /> June 15, 2016 <br /> <a href=\'https://www.spotify.com\'>A link</a>').addTo(map);
+}).bindPopup('Into the Valley <br /> Sweden <br /> June 15, 2016 <br /> <a href=\'http://localhost:3000/landings/13/booking\'>Book Travel </a>').addTo(map);
+
+fixedMarker.on('ready', function() {
+  map.fitBounds(fixedMarker.getBounds());
+});
 </script>
