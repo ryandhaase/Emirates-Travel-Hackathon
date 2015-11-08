@@ -30,13 +30,13 @@ var fixedMarker = L.marker(new L.LatLng(38.9, -77), {
   icon: L.mapbox.marker.icon({
     'marker-color': 'ff8888'
   })
-}).bindPopup('Into the Valley <br /> Sweden <br /> June 15, 2016 <br /> <a href=\'http://localhost:3000/landings/13/booking\'>Book Travel</a>').addTo(map);
+}).bindPopup('Todd Terje <br /> Washington, D.C. <br /> June 15, 2016 <br /> <a href=\'http://localhost:3000/landings/13/booking\'>Book Flight</a>').addTo(map);
 
 var fixedMarker = L.marker(new L.LatLng(40, -80), {
   icon: L.mapbox.marker.icon({
     'marker-color': 'ff8888'
   })
-}).bindPopup('Into the Valley <br /> Sweden <br /> June 15, 2016 <br /> <a href=\'http://localhost:3000/landings/13/booking\'>Book Travel </a>').addTo(map);
+}).bindPopup('Todd Terje <br /> Pennsylvania <br /> June 15, 2016 <br /> <a href=\'http://localhost:3000/landings/13/booking\'>Book Flight</a>').addTo(map);
 
 fixedMarker.on('ready', function() {
   map.fitBounds(fixedMarker.getBounds());
