@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  get 'landing/home'
 
-  resources :searches, only: [:create]
+  resources :landings, only: [:create, :show]
 
-  root to: 'landing#home'
+  root to: 'landings#home'
 end
