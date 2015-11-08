@@ -1,7 +1,40 @@
 <!--START OF THE MAP-->
 
-<div class="row">
-  <div class="map large-12 columns">
-    <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/kellydern.cigpfiick00u7uckosa8kgc6f/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1Ijoia2VsbHlkZXJuIiwiYSI6ImNpZ3BmaWpxeTAwdjF1eG0xdjdocmhvenYifQ.ua0dnrQ9efuNZxwGg7R9zA'></iframe>
-  </div>
-</div>
+<head>
+  <meta charset=utf-8 />
+  <title>A simple map</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.js'></script>
+  <link href='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.css' rel='stylesheet' />
+  <link rel="stylesheet" href="/assets/stylesheets/appication.css">
+  <link rel="stylesheet" href="/css/style.css">
+
+
+  <style>
+  body { margin:0; padding:0; }
+  #map { width:100%; height: 500px }
+  .leaflet-popup-content { padding:30px 30px;}
+  </style>
+</head>
+
+
+  <div id='map', class="map large-12 columns"></div>
+
+
+<script>
+L.mapbox.accessToken = 'pk.eyJ1Ijoia2VsbHlkZXJuIiwiYSI6ImNpZ3BmaWpxeTAwdjF1eG0xdjdocmhvenYifQ.ua0dnrQ9efuNZxwGg7R9zA';
+var map = L.mapbox.map('map', 'mapbox.streets')
+.setView([40, -74.50], 9);
+
+var fixedMarker = L.marker(new L.LatLng(38.9, -77), {
+  icon: L.mapbox.marker.icon({
+    'marker-color': 'ff8888'
+  })
+}).bindPopup('Into the Valley <br /> Sweden <br /> June 15, 2016 <br /> <a href=\'https://www.spotify.com\'>A link</a>').addTo(map);
+
+var fixedMarker = L.marker(new L.LatLng(40, -80), {
+  icon: L.mapbox.marker.icon({
+    'marker-color': 'ff8888'
+  })
+}).bindPopup('Into the Valley <br /> Sweden <br /> June 15, 2016 <br /> <a href=\'https://www.spotify.com\'>A link</a>').addTo(map);
+</script>
