@@ -11,6 +11,9 @@ class LandingsController < ApplicationController
     end
   end
 
+  def booking
+  end
+
   def show
   end
 

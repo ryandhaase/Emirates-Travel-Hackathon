@@ -26,7 +26,7 @@
 
  .nav {
    background-color: #333333;
-   padding: 30px;
+   padding: 10px;
    max-width: 100%;
  }
 
@@ -35,11 +35,14 @@
    padding: 0px 60px;
  }
 
+ #logo {
+   max-width: 110px;
+ }
+
  .input-elements {
    background-color: none;
-   display: inline-block;
-   padding: 60px 0px;
-   margin: 30px 0px;
+   padding: 30px 0px 0px;
+   margin: 50px auto 20px;
  }
 
  .button {
@@ -89,7 +92,7 @@
 
  .popular-events {
    background-color: #FFFFFF;
-   padding: 20px 0px;
+   padding: 60px 0px;
  }
 
  .artist, .date, .location {
@@ -169,11 +172,11 @@ h2 {
   margin: 0px auto;
 }
 
-.nav {
+/*.nav {
   padding: 100px 0px;
   max-width: 100%;
   background-color: #333333;
-}
+}*/
 
 .icon {
   margin: 0px auto;
@@ -250,4 +253,3 @@ a:visited {
   text-align: center;
   padding: 20px;
 }
-

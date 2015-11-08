@@ -1,18 +1,15 @@
 <%= form_for Landing.new do |f| %>
-<div class="row" "input-elements">
+<div class="row input-elements">
 
   <div class="large-4 medium-4 small-4 columns">
-    <%= f.label :category %>
     <%= f.text_field :category, placeholder: 'Search Artists' %>
   </div>
 
   <div class="large-4 medium-4 small-4 columns">
-    <%= f.label :start_date %>
     <%= f.text_field :start_date, id: 'from', placeholder: 'Start Date' %>
   </div>
 
   <div class="large-4 medium-4 small-4 columns">
-    <%= f.label :end_date %>
     <%= f.text_field :end_date, id: 'to', placeholder: 'End Date' %>
   </div>
 
